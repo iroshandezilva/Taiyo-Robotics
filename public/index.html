@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taiyo Robotic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+    #mobile-menu.menu-hidden {
+        display: none;
+    }
+
+    @font-face {
+        font-family: 'barndomsfirkante';
+        src: url('assets/font/barndomsfirkante-xw9v-webfont.woff2') format('woff2'),
+        url('assets/font/barndomsfirkante-xw9v-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+</style>
+<body class="bg-shape bg-repeat bg-contain relative">
+<div class="relative z-10">
+
+    <header>
+        <div class="bg-brown-dark py-8">
+            <div class="container mx-auto flex justify-between ">
+                <div>
+                    <h1 class="font-barn lg:text-4xl text-white">Taiyo Robotics</h1>
+                </div>
+                <div class="space-x-6 hidden md:flex items-center">
+                    <a class="font-poppins text-lg font-medium uppercase text-white" href="/">Home</a>
+                    <a class="font-poppins text-lg font-medium uppercase text-white" href="#collection">ABOUT</a>
+                    <a class="font-poppins text-lg font-medium uppercase text-white" href="#roadmap">ROADMAP</a>
+                    <a class="font-poppins text-lg font-medium uppercase" href="#roadmap"><img class="w-12"
+                                                                                               src="assets/img/discord.svg"
+                                                                                               alt=""></a>
+                    <a class="font-poppins text-lg font-medium uppercase" href="#roadmap"><img class="w-12"
+                                                                                               src="assets/img/twitter.svg"
+                                                                                               alt=""></a>
+                </div>
+                <div class="block md:hidden" id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="fixed inset-0 flex z-40 menu-hidden" id="mobile-menu" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>
+            <div class="relative max-w-xs w-full bg-cloud-burst shadow-xl pb-12 flex flex-col overflow-y-auto">
+                <div class="px-4 pt-5 pb-2 flex">
+                    <button type="button"
+                            class="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
+                            id="close-menu">
+                        <span class="sr-only">Close menu</span>
+                        <!-- Heroicon name: outline/x -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="border-t border-gray-200 py-6 px-4 space-y-6">
+                    <div class="flow-root">
+                        <a href="/" class="-m-2 p-2 block font-medium text-white">Home</a>
+                    </div>
+
+                    <div class="flow-root">
+                        <a href="#collection" class="-m-2 p-2 block font-medium text-white">COLLECTION</a>
+                    </div>
+
+                    <div class="flow-root">
+                        <a href="#roadmap" class="-m-2 p-2 block font-medium text-white">ROADMAP</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="relative pb-52">
+
+        <div class=" absolute top-0 bg-hero-bg bg-cover bg-left-bottom w-full h-full z-0 overflow-hidden"
+             style="clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);">
+            <div class="absolute bg-black opacity-50 w-full h-full z-0"></div>
+        </div>
+
+        <div class="container relative z-10 mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 xl:gap-20">
+
+            <div class=" flex items-center">
+                <div class="max-w-xl">
+                    <h1 class="xl:text-9xl text-5xl font-bold mb-5  text-white font-barn">Taiyo
+                        Robotics</h1>
+                    <p class="font-roboto lg:leading-8 lg:text-xl text-white">100% of the community fund's allocation
+                        will be decided by holders
+                        of Baby Apes. A DAO system will be setup and a fair voting system will be introduced.</p>
+
+                    <div class="flex mb-8 md:mb-0 flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10 mt-8">
+                        <a href="#"
+                           class="inline-block flex py-4 px-12 text-lg  bg-blood-red  text-white border-4 border-white font-barn transform -skew-x-12"><span
+                                class="transform skew-x-12">Join
+                            Discord</span></a>
+                        <a href="#"
+                           class="inline-block flex py-4 px-12 text-lg  bg-blood-red  text-white border-4 border-white font-barn transform -skew-x-12"><span>Collect Wallet</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="max-h">
+                <img class="w-full h-auto" src="assets/img/hero.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-cloud-burst -mt-20" id="collection">
+        <div class="owl-carousel">
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0001.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0002.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0003.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0004.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0005.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0006.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0007.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0008.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0009.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0010.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0011.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0012.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0013.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0014.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0015.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0016.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0017.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0018.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0019.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0020.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0021.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0022.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0023.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0024.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0025.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0026.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0027.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0028.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0029.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0030.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0031.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0032.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0033.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0034.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0035.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0036.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0037.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0038.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0039.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0040.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0041.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0042.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0043.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0044.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0045.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0046.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0047.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0048.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0049.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0050.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0051.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0052.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0053.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0054.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0055.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0056.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0057.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0058.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0059.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0060.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0061.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0062.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0063.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0064.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0065.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0066.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0067.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0068.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0069.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0070.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0071.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0072.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0073.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0074.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0075.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0076.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0077.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0078.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0079.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0080.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0081.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0082.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0083.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0084.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0085.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0086.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0087.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0088.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0089.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0090.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0091.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0092.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0093.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0094.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0095.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0096.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0097.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0098.png" alt="">
+                </div>
+            </div>
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0099.png" alt="">
+                </div>
+            </div>
+
+            <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
+                <div class="transform skew-x-12 relative -ml-12">
+                    <img class="w-full" src="assets/img/Robotics0100.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-24">
+            <a href="#"
+               class="inline-block py-4 px-12 text-lg  bg-blood-red  text-white border-4 border-white font-barn transform -skew-x-12"><span>Collect Wallet</span></a>
+        </div>
+    </div>
+
+    <div class="pt-32" id="roadmap">
+        <div class="max-w-3xl px-6 mx-auto">
+            <h2 class="text-4xl text-center text-white uppercase font-barn mb-16">Roadmap</h2>
+            <div class="border-blood-red border-2 transform skew-x-3 lg:skew-x-12 p-16 mb-16">
+                <div class="transform -skew-x-3 lg:-skew-x-12 text-white">
+                    <h2 class="text-3xl font-barn text-blood-red">Phase 1</h2>
+                    <p class="leading-7">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                </div>
+            </div>
+            <div class="border-blood-red border-2 transform -skew-x-3 lg:-skew-x-12 p-16 mb-16">
+                <div class="transform skew-x-3 lg:skew-x-12 text-white">
+                    <h2 class="text-3xl font-barn text-blood-red">Phase 2</h2>
+                    <p class="leading-7">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                </div>
+            </div>
+            <div class="border-blood-red border-2 transform skew-x-3 lg:skew-x-12 p-16 mb-16">
+                <div class="transform -skew-x-3 lg:-skew-x-12 text-white">
+                    <h2 class="text-3xl font-barn text-blood-red">Phase 3</h2>
+                    <p class="leading-7">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="bg-cloud-burst py-4 ">
+    <div class="container flex flex-col mg:flex-row justify-between items-center mx-auto">
+        <div class="w-32">
+            <img src="assets/img/Bold-Bunnies-Logo.png" alt="" style="filter: brightness(0) invert(1);">
+        </div>
+        <p class="font-roboto text-white text-center">2021 — Taiyo Robotic, All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            navText: [
+                "<i class='fa fa-caret-left'></i>",
+                "<i class='fa fa-caret-right'></i>"
+            ],
+            autoplay: false,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    center:true
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+
+        const navbar = document.querySelector('header');
+        window.onscroll = () => {
+            if (window.scrollY > 300) {
+                navbar.classList.add('bg-gray-900');
+            } else {
+                navbar.classList.remove('bg-gray-900');
+            }
+        };
+
+        $('#menu-toggle').click(function () {
+            $(this).find("svg").toggleClass('hidden');
+            $(this).parent().parent().find('#mobile-nav').toggleClass('hidden');
+        });
+
+    });
+
+
+</script>
+<script>
+
+    let btn = document.getElementById('toggle-btn');
+    let btn_cls = document.getElementById('close-menu');
+
+    btn.addEventListener('click', function () {
+        toggle_menu();
+    });
+    btn_cls.addEventListener('click', function () {
+        toggle_menu();
+    });
+
+    function toggle_menu() {
+        let menu = document.getElementById('mobile-menu');
+        if (menu.classList.contains('menu-hidden')) {
+            menu.classList.remove('menu-hidden');
+        } else {
+            menu.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>
