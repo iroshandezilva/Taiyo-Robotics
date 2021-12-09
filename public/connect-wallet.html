@@ -1,0 +1,63 @@
+<div class="relative z-10">
+
+    <div class="relative h-screen flex justify-center items-center">
+
+        <div class=" absolute top-0 bg-hero-bg bg-cover bg-left-bottom w-full h-full z-0 overflow-hidden">
+            <div class="absolute bg-black opacity-75connect-wallet.html w-full h-full z-0"></div>
+        </div>
+
+        <div class="container relative z-10 mx-auto">
+            <div class="max-w-xl lg:p-20 p-8 border-2 border-blood-red mx-auto bg-dark-blue">
+                <h2 class="text-blood-red text-4xl text-center font-barn mb-8">Connect Wallet:</h2>
+
+                <div class="space-y-5" id="wallet-list">
+                    <div class="bg-dark-mx-blue  p-4 flex items-center">
+                        <div class="mr-3">
+                            <img class="w-12 h-12" src="assets/img/phantom.svg" alt="">
+                        </div>
+                        <h5 class="text-white text-2xl">Phantom</h5>
+                    </div>
+
+                    <div class="bg-dark-mx-blue p-4 flex items-center">
+                        <div class="mr-3">
+                            <img class="w-12 h-12" src="assets/img/slope.svg" alt="">
+                        </div>
+                        <h5 class="text-white text-2xl">Slope</h5>
+                    </div>
+
+                    <div class="bg-dark-mx-blue p-4 flex items-center">
+                        <div class="mr-3">
+                            <img class="w-12 h-12" src="assets/img/solflare.svg" alt="">
+                        </div>
+                        <h5 class="text-white text-2xl">Solflare</h5>
+                    </div>
+
+                    <div class="bg-dark-mx-blue p-4 flex items-center">
+                        <div class="mr-3">
+                            <img class="w-12 h-12" src="assets/img/sollet.svg" alt="">
+                        </div>
+                        <h5 class="text-white text-2xl">Sollet</h5>
+                    </div>
+
+                    <div class="bg-dark-mx-blue p-4 flex items-center">
+                        <div class="mr-3">
+                            <img class="w-12 h-12" src="assets/img/sollet-extension.svg" alt="">
+                        </div>
+                        <h5 class="text-white text-2xl">Sollet (Extension)</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#wallet-list div").click(function () {
+            $.get('inventory.html',function (inv) {
+                $("#main-modal").html(inv);
+                $("#main-modal").removeClass('hidden');
+            });
+        });
+    });
+</script>

@@ -1,0 +1,18 @@
+<h3 class="text-white text-center font-semibold mb-4 text-3xl">APPLY ITEM</h3>
+<div class="bg-white w-24 h-24 mx-auto"></div>
+<p>h-24</p>
+<div class="my-6">
+    <h6 class="text-lg">STEP 2</h6>
+    <p>Approve Transaction and pay a small network fee of 0.001 SOL (click me)</p>
+</div>
+<button class=" text-white border w-full text-center border-gray-700 py-3 px-4" id="disconnect-button">
+    DISCONNECT
+</button>
+
+<script>
+    $("#disconnect-button").click(function () {
+        $.get('apply-item-2.html',function (apply_data_2) {
+            $("#modal-content").html(apply_data_2);
+        });
+    });
+</script>

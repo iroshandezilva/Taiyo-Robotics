@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Taiyo Robotic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+          integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    #mobile-menu.menu-hidden {
+        display: none;
+    }
+
+    @font-face {
+        font-family: 'barndomsfirkante';
+        src: url('assets/font/barndomsfirkante-xw9v-webfont.woff2') format('woff2'),
+        url('assets/font/barndomsfirkante-xw9v-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+</style>
+<body class="relative pb-32">
+
+<div class="fixed z-50 inset-0 overflow-y-auto hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true"
+     id="modal-apply">
+    <div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 bg-black bg-opacity-10 backdrop-filter  backdrop-blur-md " aria-hidden="true"></div>
+
+        <div class="inline-block align-bottom bg-dark-3 bg-opacity-60 border-2 text-white border-gray-700 rounded-lg  text-center overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-md sm:w-full md:p-14 p-6">
+            <div id="modal-content">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relative z-20">
+
+    <div class="relative">
+        <div class=" absolute top-0 bg-hero-bg bg-cover bg-left-bottom w-full h-full z-0 overflow-hidden">
+            <div class="absolute bg-black opacity-75 w-full h-full z-0"></div>
+        </div>
+
+        <div class="container relative z-10 mx-auto pt-16 pb-32">
+            <h2 class="text-white text-7xl text-center font-barn mb-2">Taiyo Robotics</h2>
+            <h3 class="text-white text-2xl text-center font-barn mb-8">your inventory</h3>
+        </div>
+    </div>
+    <div class="space-y-8">
+        <div class="container relative z-10 mx-auto p-8 border-2 border-blood-red bg-dark-1 lg:flex-row flex-col  flex justify-between -mt-16 ">
+            <div class="flex items-center space-x-4">
+                <div>
+                    <img class="w-12 h-12" src="assets/img/phantom.svg" alt="">
+                </div>
+                <div>
+
+                    <h6 class="text-white text-lg">AnEo...OeVs</h6>
+                    <div class="flex space-x-3">
+                        <img class="w-6 h-6" src="assets/img/Icon%20material-account-balance.svg" alt="">
+                        <h6 class="text-red-600">1.5664 SOL</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-red-600 py-3 px-8 uppercase bg-dark-3">DISCONNECT</button>
+                <button class="text-white border border-white py-3 px-8 uppercase bg-dark-3">Refresh</button>
+            </div>
+        </div>
+
+        <div id="main-contaner" class="space-y-8">
+            <div class="container relative z-10 mx-auto p-8 border-2 border-dark-2 bg-dark-1 flex justify-between ">
+                <div class="grid lg:grid-cols-2 gap-10 ">
+                    <div class="">
+                        <a href="#" class="flex items-center text-dark-2  mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M15 19l-7-7 7-7"/>
+                            </svg>
+                            Back to wallet
+                        </a>
+                        <div class="grid lg:grid-cols-2 gap-10">
+                            <div class="border-dark-2  border-4">
+                                <img src="assets/img/Robotics0100.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="text-white text-3xl font-bold mb-2">Taiyo Robot</h3>
+                                <div class="flex items-center space-x-3 mb-8">
+                                    <span class="bg-red-500 text-white py-1 px-5">5456</span>
+                                    <span class="text-gray-500">(#1356) Mia</span>
+                                </div>
+
+                                <button class="w-full bg-dark-3 text-white border border-blood-red py-3 px-4 flex items-center justify-between mb-4">
+                                    Download .GIF
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                         viewBox="0 0 24 24"
+                                         stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                                    </svg>
+                                </button>
+
+                                <button class="w-full bg-dark-3 text-white border border-blood-red py-3 px-4 flex items-center justify-between"
+                                        onclick="load_inventory_1()">
+                                    Customize Taiyo Robots
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                         viewBox="0 0 24 24"
+                                         stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h6 class="text-white mb-4">143 Items in Inventory</h6>
+                        <div class="border border-blood-red p-6 bg-dark-3 text-center">
+                            <div class="grid grid-cols-4 grid-rows-2 gap-4 mb-6">
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                                <div class="bg-dark-1 w-full h-28"></div>
+                            </div>
+                            <a href="#" class="text-red-600 underline  w-full font-semibold">View More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container relative z-10 mx-auto p-8 border-2 border-dark-2 bg-dark-1 ">
+                <div class="flex justify-between items-center lg:mx-32 border-b border-dark-2 py-6">
+                    <div class="flex-shrink">
+                        <p class="text-white">You can apply item to a Taiyo Robotics by finding it in the list below &
+                            tapping
+                            the "Customize Robot" button. </p>
+                    </div>
+                    <button class="flex-shrink-0 bg-dark-3 text-white border border-blood-red py-3 px-4 flex items-center justify-between ">
+                        Coming Soon
+                    </button>
+                </div>
+                <div class="flex justify-between items-center lg:mx-32 border-b border-dark-2 py-6">
+                    <div class="flex-shrink">
+                        <p class="text-white">You can apply item to a Taiyo Robotics by finding it in the list below &
+                            tapping
+                            the "Customize Robot" button. </p>
+                    </div>
+                    <button class="flex-shrink-0 bg-dark-3 text-white border border-blood-red py-3 px-4 flex items-center justify-between ">
+                        Coming Soon
+                    </button>
+                </div>
+                <div class="flex justify-between items-center lg:mx-32 border-b border-dark-2 py-6">
+                    <div class="flex-shrink">
+                        <p class="text-white">You can apply item to a Taiyo Robotics by finding it in the list below &
+                            tapping
+                            the "Customize Robot" button. </p>
+                    </div>
+                    <button class="flex-shrink-0 bg-dark-3 text-white border border-blood-red py-3 px-4 flex items-center justify-between ">
+                        Coming Soon
+                    </button>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#" class=" block mx-auto text-red-600 underline  font-semibold">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            function load_inventory_1() {
+                $.get('inventory-1.html', function (data) {
+                    $("#main-contaner").html(data);
+
+                    $("#grid-wrapper div").click(function () {
+
+                        $.get('apply-item.html', function (appy_data) {
+                            $("#modal-content").html(appy_data);
+                            $("#modal-apply").removeClass('hidden');
+                        });
+                    });
+                });
+            }
+
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

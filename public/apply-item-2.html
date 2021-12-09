@@ -1,0 +1,28 @@
+<h3 class="text-white text-center font-semibold mb-4 text-3xl">APPLY ITEM</h3>
+<div class="bg-white w-24 h-24 mx-auto"></div>
+<p>h-24</p>
+<div class="my-6">
+    <h6 class="text-lg">STEP 2</h6>
+    <p>Approve Transaction and pay a small network fee of 0.001 SOL (click me)</p>
+</div>
+<div class="my-6">
+    <div class="relative pt-1">
+        <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-500">
+            <div
+                    style="width: 30%"
+                    class=" shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-red-500 "
+            ></div>
+        </div>
+        62%
+    </div>
+</div>
+<button class="bg-green-700 text-white  w-full text-center  py-3 px-4" id="cancel-button">
+    Cancel
+</button>
+<script>
+    $("#cancel-button").click(function () {
+        $.get('apply-item-3.html',function (apply_data_3) {
+            $("#modal-content").html(apply_data_3);
+        });
+    });
+</script>

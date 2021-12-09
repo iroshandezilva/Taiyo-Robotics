@@ -18,7 +18,11 @@ module.exports = {
                 'brown-dark': '#232323',
                 'blood-red': '#C92A50',
                 'dark-blue': '#1F212D',
+                'dark-mx-blue': '#18191E',
                 'sea-blue': '#0A102E',
+                'dark-1': '#17191D',
+                'dark-2': '#303030',
+                'dark-3': '#212329',
                 cyan: colors.cyan,
                 teal: colors.teal,
                 emerald: colors.emerald,
@@ -38,5 +42,7 @@ module.exports = {
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/forms'),
+    ],
 }

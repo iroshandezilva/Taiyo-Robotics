@@ -14,3 +14,23 @@ body{
 html {
     scroll-behavior: smooth;
 }
+
+.paginationjs-pages ul {
+    display: flex;
+    justify-content: center;
+}
+
+li.paginationjs-page, .paginationjs-ellipsis, .paginationjs-prev, .paginationjs-next {
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 8px;
+    margin: 0 3px;
+    border-radius: 9px;
+    font-weight: 800;
+}
+
+.paginationjs-page.active {
+    background: #fff;
+    border: 2px solid #B93A52;
+    color: #B93A52;
+}

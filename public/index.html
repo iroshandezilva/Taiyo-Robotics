@@ -112,7 +112,7 @@
                            class="inline-block flex py-4 px-12 text-lg  bg-blood-red  text-white border-4 border-white font-barn transform -skew-x-12"><span
                                 class="transform skew-x-12">Join
                             Discord</span></a>
-                        <a href="#"
+                        <a href="#" id="collect-wallet"
                            class="inline-block flex py-4 px-12 text-lg  bg-blood-red  text-white border-4 border-white font-barn transform -skew-x-12"><span>Collect Wallet</span></a>
                     </div>
                 </div>
@@ -680,6 +680,7 @@
             <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
                 <div class="transform skew-x-12 relative -ml-12">
                     <img class="w-full" src="assets/img/Robotics0098.png" alt="">
+                    <img class="w-full" src="assets/img/Robotics0098.png" alt="">
                 </div>
             </div>
             <div class="border-2 border-blood-red transform -skew-x-12 overflow-hidden bg-dark-blue pt-8">
@@ -743,6 +744,10 @@
     </div>
 </footer>
 
+<div id="main-modal" class="fixed w-full h-full bg-shape top-0 left-0 z-50 hidden overflow-y-scroll">
+
+</div>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -794,10 +799,10 @@
 </script>
 <script>
 
-    let btn = document.getElementById('toggle-btn');
+    let btn_1 = document.getElementById('toggle-btn');
     let btn_cls = document.getElementById('close-menu');
 
-    btn.addEventListener('click', function () {
+    btn_1.addEventListener('click', function () {
         toggle_menu();
     });
     btn_cls.addEventListener('click', function () {
@@ -812,6 +817,20 @@
             menu.classList.add('menu-hidden');
         }
     }
+</script>
+
+
+<script>
+    $(document).ready(function () {
+        $("#collect-wallet").click(function (e) {
+            e.preventDefault();
+            $.get('connect-wallet.html',function (inv) {
+                $('body').addClass('overflow-hidden');
+                $("#main-modal").html(inv);
+                $("#main-modal").removeClass('hidden');
+            });
+        });
+    });
 </script>
 </body>
 </html>
